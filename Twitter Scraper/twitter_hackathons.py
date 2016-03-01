@@ -4,12 +4,16 @@
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
+import yaml
+
+with open("twitter_config.yml", 'r') as ymlfile:
+    cfg = yaml.load(ymlfile)
 
 # Variables with user credentials to access the Twitter API
-access_token = "507100158-jOzjXuEgDfVuTYwxbt4MR4vzUCepeHAqCA9Vgp7Y"
-access_token_secret = "Jdhzdo30uiB6JPTPK6MLgoq6rEu7E55MushHE8YYk2GeG"
-consumer_key = "lIvH5Y3rCJ9j8nQcidLBtvKUW"
-consumer_secret = "hxHCV6exazbl72NgKmU6uU2lkgpsSpWAxf1732Guc8jKIlLzEf"
+access_token = cfg["mysql"]["access_token"]
+access_token_secret = cfg["mysql"]["access_token_secret"]
+consumer_key = cfg["mysql"]["consumer_key"]
+consumer_secret = cfg["mysql"]["consumer_secret"]
 
 # Prints received tweets to stdout
 

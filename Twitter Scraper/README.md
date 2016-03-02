@@ -1,0 +1,1 @@
+Uses [Tweepy](http://www.tweepy.org/) to search Twitter with the keyword 'hackathon'

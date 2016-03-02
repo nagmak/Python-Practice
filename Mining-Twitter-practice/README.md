@@ -1,0 +1,1 @@
+Uses [Tweepy](http://www.tweepy.org/) to mine my Twitter account for tweets, and followers

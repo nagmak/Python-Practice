@@ -1,5 +1,5 @@
 mysql:
-    access_token: 507100158-jOzjXuEgDfVuTYwxbt4MR4vzUCepeHAqCA9Vgp7Y
-    access_token_secret: Jdhzdo30uiB6JPTPK6MLgoq6rEu7E55MushHE8YYk2GeG
-    consumer_key: lIvH5Y3rCJ9j8nQcidLBtvKUW
-    consumer_secret: hxHCV6exazbl72NgKmU6uU2lkgpsSpWAxf1732Guc8jKIlLzEf
+    access_token: <REPLACE ACCESS_TOKEN>
+    access_token_secret: <REPLACE ACCESS_TOKEN_SECRET>
+    consumer_key: <REPLACE CONSUMER_KEY>
+    consumer_secret: <REPLACE CONSUMER_KEY_SECRET>

@@ -23,7 +23,7 @@ cat = {
 	'hungry': False,
 	'food': 1,
 	'age': 10,
-	'image': '[>__<]',
+	'image': '[o-^-o]',
 }
 
 rat = {
@@ -42,13 +42,18 @@ if action == 'play':
 	choosepet = int(input("Who do you want to play with? 1. owl, 2. toad, 3. cat, 4. rat: "))
 	if choosepet == 1:
 		print ('You say "Hey ' + owl['name'] + '!" while ruffling her feathers softly.\nShe blinks contentedly.')
+		print (owl['image'])
 	elif choosepet == 2:
 		print ('You say "Hey ' + toad['name'] + '!" while rubbing a finger over his head.\nHe sticks out his tongue.')
+		print (toad['image'])
 	elif choosepet == 3:
 		print ('You say "Hey ' + cat['name'] + '!" giving her a baby rattle to play with.\nHe mewls.')
+		print (cat['image'])
 	elif choosepet == 4:
 		print ('You say "Hey ' + rat['name'] + '!" while whispering a spell to turn him yellow.\nHe squeaks! Nothing happens. Someone tricked you with a fake spell. Gah.')
+		print (rat['image'])
 	else:
 		print ('Selection error. You did not play :(')
-	
+else:
+	print ('Selection error.')
 		

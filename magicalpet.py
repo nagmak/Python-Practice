@@ -36,10 +36,7 @@ rat = {
 
 magipets = [owl, toad, cat, rat]
 
-print ('---------------------------------')
-action = str(input("Would you like to 'play' or 'feed' a pet? "))
-if action == 'play':
-	choosepet = int(input("Who do you want to play with? 1. owl, 2. toad, 3. cat, 4. rat: "))
+def play(choosepet):
 	if choosepet == 1:
 		print ('You say "Hey ' + owl['name'] + '!" while ruffling her feathers softly.\nShe blinks contentedly.')
 		print (owl['image'])
@@ -54,6 +51,21 @@ if action == 'play':
 		print (rat['image'])
 	else:
 		print ('Selection error. You did not play :(')
+
+def feed():
+	for pet in magipets:
+		if pet['hungry'] == True:
+			print ("You fed " + pet['name'])
+
+
+
+print ('---------------------------------')
+action = str(input("Would you like to 'play' or 'feed' a pet? "))
+if action == 'play':
+	choosepet = int(input("Who do you want to play with? 1. owl, 2. toad, 3. cat, 4. rat: "))
+	play(choosepet)
+elif action == 'feed':
+	feed()
 else:
 	print ('Selection error.')
 		

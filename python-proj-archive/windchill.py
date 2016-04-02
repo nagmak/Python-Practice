@@ -6,19 +6,21 @@ def calculate_wcti(air_temp, wind_speed):
 				+ 0.4275 * air_temp * wind_speed**0.16
 	return wct_index
 
-print("Temperature (degrees F): 10.0")
+print("\nTemperature (degrees F): 10.0")
 print("Wind speed (MPH): 15.0")
-print("Wind Chill Temperature Index:{0}".format(calculate_wcti(10.0, 15)))
+print("Wind Chill Temperature Index: {0}".format(calculate_wcti(10.0, 15)))
 
-print("For air temp 0.0 degrees Fahrenheit and 25 MPH wind speed,\
-	wind chill temperature index is: {0}".format(calculate_wcti(0.0, 25)))
+print("\nTemperature (degrees F): 10.0")
+print("Wind speed (MPH): 15.0")
+print("Wind Chill Temperature Index: {0}".format(calculate_wcti(0.0, 25)))
 
-print("For air temp -10 degrees Fahrenheit and 35 MPH wind speed,\
-	wind chill temperature index is: {0}".format(calculate_wcti(-10.0, 35)))
+print("\nTemperature (degrees F): 10.0")
+print("Wind speed (MPH): 15.0")
+print("Wind Chill Temperature Index: {0}".format(calculate_wcti(-10.0, 35)))
 
-print("\nNow let's do some measurements with you.\n")
+user_air_temp = float(input("\nPlease enter the Temperature (degrees F): "))
+user_wind_speed = float(input("\nPlease enter the Wind Speed (MPH): "))
 
-user_air_temp = float(input("Enter an air temp measurement: "))
-user_wind_speed = float(input("Enter a wind speed measurement: "))
-
-print("Your Wind Chill Temperature Index is: {0}".format(calculate_wcti(user_air_temp, user_wind_speed)))
+print("\nTemperature (degrees F): {0}".format(user_air_temp))
+print("Wind Speed (MPH): {0}".format(user_wind_speed))
+print("Wind Chill Temperature Index: {0}".format(calculate_wcti(user_air_temp, user_wind_speed)))

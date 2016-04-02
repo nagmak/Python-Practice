@@ -6,8 +6,9 @@ def calculate_wcti(air_temp, wind_speed):
 				+ 0.4275 * air_temp * wind_speed**0.16
 	return wct_index
 
-print("For air temp 10.0 degrees Fahrenheit and 15 MPH wind speed,\
-	wind chill temperature index is: {0}".format(calculate_wcti(10.0, 15)))
+print("Temperature (degrees F): 10.0")
+print("Wind speed (MPH): 15.0")
+print("Wind Chill Temperature Index:{0}".format(calculate_wcti(10.0, 15)))
 
 print("For air temp 0.0 degrees Fahrenheit and 25 MPH wind speed,\
 	wind chill temperature index is: {0}".format(calculate_wcti(0.0, 25)))
